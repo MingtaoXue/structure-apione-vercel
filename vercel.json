@@ -5,8 +5,6 @@
     { "src": "api/index.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/openapi.json", "dest": "api/openapi.json" },
-    { "src": "/.*", "dest": "api/index.py" }
+    { "src": "/api/(.*)", "dest": "api/index.py" }
   ]
 }
-
